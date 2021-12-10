@@ -10,3 +10,13 @@ class Deck:
             for rank in ranks:
                 self.cards.append(card.Card(rank,suit))
 
+    def __str__(self):
+        return self.rank + " of " + self.suit
+
+    def shuffle(self):
+        random.shuffle(self.cards)
+
+    def deal(self):
+        return self.cards.pop(0)
+
+

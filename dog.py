@@ -19,7 +19,7 @@ class Dog:
             print(self.name," has not performed any tricks.")
         else:
             for trick in self.trick_list:
-                print(self.name," has performed ", trick)
+                print(self.name + " has performed " + trick)
 
 
 
